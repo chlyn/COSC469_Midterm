@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Account Form</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <!-- BACKGROUND -->
+        <div id="background">
+
+            <!-------------------------------------------------------------------------------------------------------------------------->
+            <!-- FORM -->
+            <div class="form">
+
+                <!-- FORM CONTAINER -->
+                <div class="form-container">
+
+                    <!-- FORM SUBTITLE -->
+                        <div class="form-subtitle">
+                            <h2>Account Form</h2>
+                        </div>
+
+
+
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!-- LOGIN SECTION-->
+                    <section class="form-section active" id="login">
+
+                        <!-- FORM TITLE -->
+                        <span class="form-title" id="login-title">Welcome back</span>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div class="alert success hidden" id="login-success">
+                            <span class="material-icons">check_circle_outline</span>
+                            <span class="msg-success-text"></span>
+                        </div>
+
+                        <!-- ERROR MESSAGE -->
+                        <div class="alert error hidden" id="login-error">
+                            <span class="material-icons">error_outline</span>
+                            <span class="msg-error-text"></span>
+                        </div>
+
+                        <!-- FORM CONTENT -->
+                        <form id="login-form" action="/api/login" method="post">
+
+                            <!-- USERNAME FEILD -->
+                            <label class="form-label">
+                                Username
+                                <input type="text" name="username" required/>
+                            </label>
+
+                            <!-- PASSWORD FEILD -->
+                            <label class="form-label">
+                                Password
+                                <div class="password-field">
+                                    <input type="password" name="password" class="password-input" id="login-password" required/>
+                                    <button type="button" class="password-toggle" aria-label="Show password" aria-pressed="false">
+                                        <span class="material-icons">visibility_off</span>
+                                    </button>
+                                </div>
+                            </label>
+
+                            <!-- LOG IN BUTTON -->
+                            <button type="submit" class="form-btn">Log In</button>
+
+                        </form>
+
+                    </section>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-------------------------------------------------------------------------------------------------------------------------->
+            <!-- HOME PAGE -->
+            <div class="content hidden" id="home">
+
+                <!-- SUCCESS ALERT -->
+                <div class="alert success hidden toast" id="home-success">
+                    <span class="material-icons">check_circle_outline</span>
+                    <span class="msg-success-text"></span>
+                </div>
+
+                <!-- TOP BAR -->
+                <div class="topbar">
+
+                    <h1 class="topbar-title" id="topbar-title">Welcome back, </h1>
+
+                    <!-- USER PROFILE BUTTON -->
+                    <div class="user-profile">
+
+                        <!-- PROFILE BUTTON -->
+                        <button class="profile-btn" id="profile-btn">
+
+                            <!-- NAME & EMAIL -->
+                            <div class="profile-info">
+                                <p class="profile-name">Jane Doe</p>
+                                <p class="profile-password">doej0123</p>
+                            </div>
+
+                            <!-- INITIALS IMAGE -->
+                            <span class="profile-img">JD</span>
+
+                        </button>
+
+                        <!-- PROFILE MENU -->
+                        <div class="profile-menu" id="profile-menu">
+
+                            <button class="profile-menu-item">
+                                <span class="material-icons">person</span>
+                                Profile
+                            </button>
+
+                            <button class="profile-menu-item" id="signout-btn">
+                                <span class="material-icons">logout</span>
+                                Sign Out
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="main-content">
+                    <h1 class="home-title">Home Page</h1>
+
+                    <p class="home-text">
+                        You are now logged in.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script type="module" src="script.js"></script>
+
+    </body>
+
+</html>
