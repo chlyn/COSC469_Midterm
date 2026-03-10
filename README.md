@@ -1,9 +1,9 @@
 # COSC 469: Midterm Project
 
-By: Chenilyn Joy Espineda
+**By: Chenilyn Joy Espineda**  
+**Instructor: Dr. Apollo Tankeh**
 
 This repository contains the three required components for the midterm project.
-
 
 ---
 
